@@ -16,12 +16,12 @@ const Banner = ({
   buttonText,
 }) => (
   <Flex flexWrap="wrap" justifyContent="center" m="10">
-    <Image src={imageUrl} width={800} height={500} alt="banner" />
+    <Image src={imageUrl} width={600} height={400} alt="banner" />
     <Box p="5" marginLeft="50">
-      <Heading as="h2" fontSize="50px" >
+      <Heading as="h2" fontSize="2.3em" >
         {purpose}
       </Heading>
-      <Text fontSize="25px" fontWeight="bold" color="gray.500">
+      <Text fontSize="25px" marginTop="10" marginBottom="10" fontWeight="bold" color="gray.500">
         {title1}
         <br />
         {title2}
@@ -36,9 +36,10 @@ const Banner = ({
         fontSize="3xl"
         fontWeight="bold"
         backgroundColor="black"
+        _hover="gray"
         color="white"
         border="none"
-        p="20"
+        p="10"
       >
         <Link href={linkName}>{buttonText}</Link>
       </Button>
